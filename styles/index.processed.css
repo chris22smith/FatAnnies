@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+body:before {
+  border-top: solid 50vh #fff;
+  border-left: solid 50vw #fff;
+  border-right: solid 50vw #eee;
+  border-bottom: solid 50vh #eee;
+  content: "";
+  height: 0;
+  position: fixed;
+  width: 0;
+  z-index: -1;
+}
+
+a,
+a:link,
+a:visited,
+a:focus {
+  color: tomato;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header .home {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+header .home .logo {
+  margin: 2.5vw 1vw 2.5vw 2vw;
+  width: 20vw;
+}
+
+header .home .logo-text {
+  margin: 2.5vw 2vw 2.5vw 1vw;
+  width: 70vw;
+}
+
+header nav {
+  background-color: #000;
+}
+
+header nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+header nav ul li a,
+header nav ul li a:link,
+header nav ul li a:visited,
+header nav ul li a:focus {
+  color: tomato;
+  display: inline-block;
+  padding: 1em .5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover,
+header nav ul li a:link:hover,
+header nav ul li a:visited:hover,
+header nav ul li a:focus:hover {
+  color: #fff;
+}
+
+header nav ul li a .icon,
+header nav ul li a:link .icon,
+header nav ul li a:visited .icon,
+header nav ul li a:focus .icon {
+  font-size: 1.5em;
+}
+
+header nav ul li a .label,
+header nav ul li a:link .label,
+header nav ul li a:visited .label,
+header nav ul li a:focus .label {
+  font-size: 1em;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.hero {
+  background-image: url(/images/fa-cart-colour-small.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: .25em;
+  padding-bottom: 62.5%;
+}
+
+main>section {
+  margin: 0 auto;
+  max-width: 44em;
+  padding: 1em 2vw;
+}
+
+main>section h2 {
+  border-bottom: solid 2px #000;
+  border-top: solid 2px #000;
+  font-size: 2em;
+  padding: .125em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main>section h3 {
+  border-bottom: solid 1px #000;
+  border-top: solid 1px #000;
+  font-size: 1.5em;
+  padding: .125em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main>section h4 {
+  border-bottom: solid 1px #000;
+  font-size: 1.25em;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+main>section ul {
+  list-style: none;
+  padding: 0;
+}
+
+main>section ul li {
+  margin-left: 1.5em;
+  padding: .25em 0;
+  position: relative;
+}
+
+main>section ul li:before {
+  color: tomato;
+  content: "\2605";
+  left: -1.5em;
+  position: absolute;
+  top: 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.socials li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.socials li a {
+  display: block;
+  font-size: 10vw;
+}
+
+.socials li a span {
+  display: block;
+  font-size: 1rem;
+}
+
+.socials li:before {
+  content: "";
+  position: static;
+}
+
+footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 1em 2vw;
+  margin-top: 2em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  header nav ul li a .icon,
+  header nav ul li a:link .icon,
+  header nav ul li a:visited .icon,
+  header nav ul li a:focus .icon {
+    font-size: 5vw;
+  }
+  header nav ul li a .label,
+  header nav ul li a:link .label,
+  header nav ul li a:visited .label,
+  header nav ul li a:focus .label {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 375px),
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+  .hero {
+    background-image: url(/images/fa-cart-colour-medium.jpg);
+  }
+}
+
+@media only screen and (min-width: 750px),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(/images/fa-cart-colour-large.jpg);
+  }
+}
