@@ -1,0 +1,275 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:#F4EAD8;
+    color:#2D4283;
+    font-family:"Fugaz One", sans-serif;
+    margin:0;
+    min-width:320px;
+    overflow-x:hidden;
+}
+
+section {
+    padding:0;
+}
+
+section > .content {
+    border:solid .5em #B21827;
+    border-radius: 6em / 3em;
+    box-sizing:border-box;
+    margin:1em;
+    max-width:calc(768px - 2em);
+    padding:1em 1em 2em 1em;
+}
+
+header, 
+footer {
+    margin:1em;
+    padding:1em;
+    text-align:center;
+}
+
+h1 {
+    left:-9999px;
+    position:absolute;
+}
+
+h2,
+h3 {
+    color:#B21827;
+    font-size:2em;
+    line-height:1;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+h3 {
+    font-size:1.5em;
+}
+
+input,
+textarea {
+    background-color:#fff;
+    border:solid 2px #2D4283;
+    border-radius:.25em;
+    color:#B21827;
+    font:inherit;
+    padding:.5em 1em;
+    width:calc(100% - 2em - 4px);
+}
+
+button,
+.button {
+    background-color:#2D4283!important;
+    border:solid 2px #2D4283;
+    border-radius:.25em;
+    color:#fff!important;
+    display:inline-block!important;
+    font:inherit;
+    padding:.5em 1em!important;
+    position:relative;
+    text-transform:uppercase;
+    transition:background-color top .2s ease-in-out;
+    white-space:nowrap;
+}
+
+button:hover,
+.button:hover {
+    background-color:#B21827!important;
+}
+
+button:active,
+.button:active {
+    top:2px;
+}
+
+a,
+a:link {
+    color:#2D4283;
+    text-decoration:none;
+    transition:color .2s ease-in-out;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color:#B21827;
+}
+
+nav {
+    background-color:#F4EAD8;
+    border-bottom:solid 3px #B21827;
+    border-top:solid 3px #2D4283;
+    margin-bottom:1em;
+}
+
+#logo {
+    height:calc(100vmin - 4em);
+    max-height:400px;
+    max-width:400px;
+    width:calc(100vmin - 4em);
+}
+
+#navigation {
+    column-count:2;
+    column-gap:1em;
+    list-style:none;
+    margin:.5em;
+    padding:0;
+}
+
+#navigation > li {
+    margin:.5em;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+#navigation > li:nth-child(4) {
+    break-after:always;
+}
+
+#navigation > li.dog {
+    display:none;
+}
+
+#navigation > li > a {
+    border:solid 2px transparent;
+    display:block;
+    line-height:1;    
+    padding:.5em;
+}
+
+#navigation .button {
+    max-width:6em;
+    text-align:center;
+}
+
+#opening-hours p {
+    color:#2D4283;
+    font-size:1.5em;
+    margin-bottom:0;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.nowrap {
+    white-space:nowrap;
+}
+
+.key {
+    color:#2D4283;
+}
+
+.key > p {
+    text-transform:uppercase;
+}
+
+.key > .codes {
+    column-count:1;
+    list-style:none;
+    padding:0;
+}
+
+.hotdogs > p,
+.burgers > p,
+.shakes > p {
+    color:#B21827;
+}
+
+.menu-items {
+    list-style:none;
+    padding:0;
+}
+
+.menu-items > li {
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:.5em;
+}
+
+.menu-items .name {
+    font-size:1.5em;
+    font-weight:normal;
+    text-transform:uppercase;
+}
+
+.menu-items .description {
+    display:block;
+}
+
+.menu-items .price {
+    color:#B21827;
+    font-family:'Yellowtail', cursive;
+    font-size:2em;
+    font-weight:bold;
+}
+
+.meal-deals > h3 {
+    font-family:'Yellowtail', cursive;
+    font-size:2.5em;
+    text-transform:lowercase;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .social-media-links > li {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .social-media-links > li > a {
+    display: block;
+    font-size: 10vw;
+  }
+  
+  .social-media-links > li > a > span {
+    display: block;
+    font-size: 1rem;
+  }
+  
+  .social-media-links > li:before {
+    content: "";
+    position: static;
+  }
+
+@media only screen and (min-width:768px) {
+    nav {
+        position:sticky;
+        top:0;
+        z-index:1;
+    }
+    section {
+        padding:4em 0 0 0;
+    }
+    section > .content {
+        margin:0 auto;
+        padding:1em 2em 2em 2em;
+    }
+    #navigation {
+        align-items:center;
+        display:flex;
+        justify-content:space-between;
+    }
+    #navigation > li {
+        flex:1 1 auto;
+        margin:0;
+    }
+    #navigation > li.dog {
+        display:block;
+    }
+    #navigation > li > a {
+        padding:0;
+    }
+    .key > .codes {
+        column-count:2;
+    }
+}
