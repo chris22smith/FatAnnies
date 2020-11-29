@@ -49,6 +49,12 @@ h3 {
     font-size:1.5em;
 }
 
+h4 {
+    font-size:1em;
+    text-align:center;
+    text-transform:uppercase;
+}
+
 input,
 textarea {
     background-color:#fff;
@@ -152,6 +158,46 @@ nav {
     margin-bottom:0;
     text-align:center;
     text-transform:uppercase;
+}
+
+#going-meat-free .content {
+    border-color:#2D4283;
+}
+
+#going-meat-free .read-more-p {
+    text-align:center;
+}
+
+#going-meat-free #read-more {
+    display:none;
+}
+
+#going-meat-free .further-reading {
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .2s ease-in-out;
+}
+
+#going-meat-free .further-reading p:first-child {
+    margin-top:0;
+}
+
+#going-meat-free .further-reading p:last-child {
+    margin-bottom:0;
+}
+
+#going-meat-free #read-more:checked ~ .further-reading {
+    max-height:9999px;
+}
+
+#going-meat-free #read-more:checked ~ .read-more-p {
+    display:none;
+}
+
+#going-meat-free strong {
+    color:#B21827;
+    font-family:'Yellowtail', cursive;
+    font-size:1.5em;
 }
 
 .nowrap {
