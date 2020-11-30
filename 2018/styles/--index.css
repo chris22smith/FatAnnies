@@ -3,7 +3,6 @@
  * index.scss
  * - Add any styles you want here!
  */
-
 body {
   background-color: #000;
   font-family: sans-serif;
@@ -36,13 +35,12 @@ h2 {
   text-transform: uppercase;
 }
 
-h2:before,
-h2:after {
+h2:before, h2:after {
   content: "☆";
 }
 
 .cover {
-  background-image: url("/images/fa-cart-colour-tiny.jpg");
+  background-image: url("images/fa-cart-colour-tiny.jpg");
   background-size: cover;
   filter: blur(20px);
   padding-top: 50%;
@@ -50,7 +48,7 @@ h2:after {
 
 .cover.hires {
   animation: sharpen 3s both;
-  background-image: url("/images/fa-cart-colour-large.jpg");
+  background-image: url("images/fa-cart-colour-large.jpg");
 }
 
 .food {

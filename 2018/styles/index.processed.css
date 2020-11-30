@@ -101,7 +101,7 @@ header nav ul li a:focus .label {
 }
 
 .hero {
-  background-image: url(/images/fa-cart-colour-small.jpg);
+  background-image: url(../images/fa-cart-colour-small.jpg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,7 +215,7 @@ footer {
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
   .hero {
-    background-image: url(/images/fa-cart-colour-medium.jpg);
+    background-image: url(../images/fa-cart-colour-medium.jpg);
   }
 }
 
@@ -223,6 +223,6 @@ only screen and (min-resolution: 144dpi) {
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi) {
   .hero {
-    background-image: url(/images/fa-cart-colour-large.jpg);
+    background-image: url(../images/fa-cart-colour-large.jpg);
   }
 }

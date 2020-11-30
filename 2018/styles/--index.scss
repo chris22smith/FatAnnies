@@ -37,13 +37,13 @@ h2 {
 }
 
 .cover {
-  background-image:url('/images/fa-cart-colour-tiny.jpg');
+  background-image:url('images/fa-cart-colour-tiny.jpg');
   background-size:cover;
   filter:blur(20px);
   padding-top:50%;
   &.hires {
     animation: sharpen 3s both;
-    background-image:url('/images/fa-cart-colour-large.jpg');
+    background-image:url('images/fa-cart-colour-large.jpg');
   }
 }
 
