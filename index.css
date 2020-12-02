@@ -49,12 +49,6 @@ h3 {
     font-size:1.5em;
 }
 
-h4 {
-    font-size:1em;
-    text-align:center;
-    text-transform:uppercase;
-}
-
 input,
 textarea {
     background-color:#fff;
@@ -162,6 +156,13 @@ nav {
 
 #going-meat-free .content {
     border-color:#2D4283;
+}
+
+#going-meat-free h3 {
+    color:#2D4283;
+    font-size:1em;
+    text-align:center;
+    text-transform:uppercase;
 }
 
 #going-meat-free .read-more-p {
