@@ -137,7 +137,8 @@ nav {
 #navigation > li > a {
     border:solid 2px transparent;
     display:block;
-    line-height:1;    
+    line-height:1;
+    min-height:20px;  
     padding:.5em;
 }
 
@@ -286,6 +287,10 @@ nav {
   .social-media-links > li:before {
     content: "";
     position: static;
+  }
+
+  footer a img {
+      border:none;
   }
 
 @media only screen and (min-width:768px) {
