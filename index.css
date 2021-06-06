@@ -85,6 +85,11 @@ button:active,
     top:2px;
 }
 
+button > span,
+.button > span {
+    margin-left:.25em;
+}
+
 a,
 a:link {
     color:#2D4283;
@@ -113,8 +118,10 @@ nav {
 }
 
 #navigation {
-    column-count:2;
-    column-gap:1em;
+    display:grid;
+    grid-auto-flow:column;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
     list-style:none;
     margin:.5em;
     padding:0;
@@ -124,10 +131,6 @@ nav {
     margin:.5em;
     text-align:center;
     text-transform:uppercase;
-}
-
-#navigation > li:nth-child(4) {
-    break-after:always;
 }
 
 #navigation > li.dog {
@@ -155,48 +158,37 @@ nav {
     text-transform:uppercase;
 }
 
-#going-meat-free .content {
-    border-color:#2D4283;
-}
-
-#going-meat-free h3 {
-    color:#2D4283;
-    font-size:1em;
-    text-align:center;
-    text-transform:uppercase;
-}
-
-#going-meat-free .read-more-p {
+#background .read-more-p {
     text-align:center;
 }
 
-#going-meat-free #read-more {
+#background #read-more {
     display:none;
 }
 
-#going-meat-free .further-reading {
+#background .further-reading {
     max-height:0;
     overflow:hidden;
     transition:max-height .2s ease-in-out;
 }
 
-#going-meat-free .further-reading p:first-child {
+#background .further-reading p:first-child {
     margin-top:0;
 }
 
-#going-meat-free .further-reading p:last-child {
+#background .further-reading p:last-child {
     margin-bottom:0;
 }
 
-#going-meat-free #read-more:checked ~ .further-reading {
+#background #read-more:checked ~ .further-reading {
     max-height:9999px;
 }
 
-#going-meat-free #read-more:checked ~ .read-more-p {
+#background #read-more:checked ~ .read-more-p {
     display:none;
 }
 
-#going-meat-free strong {
+#background strong {
     color:#B21827;
     font-family:'Yellowtail', cursive;
     font-size:1.5em;
