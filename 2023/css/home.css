@@ -3,7 +3,7 @@ header {
   background-image: url(../img/stickers-tile.webp);
   background-repeat: repeat;
   background-size: 1000px 550px;
-  block-size: 90vmin;
+  block-size: 90vh;
   display: flex;
   justify-content: center;
   margin-block-end: 1rem;
