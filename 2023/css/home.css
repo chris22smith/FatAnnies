@@ -22,6 +22,14 @@ header {
   border-radius: 50%;
   inline-size: 60vmin;
   padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.uber-eats-link {
+  inset-block-start: 0.5rem;
+  inset-inline-end: 0.5rem;
+  position: absolute;
 }
 
 @keyframes bg-scroll {
