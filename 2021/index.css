@@ -1,0 +1,369 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4ead8;
+  color: #2d4283;
+  font-family: "Fugaz One", sans-serif;
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 0;
+}
+
+section > .content {
+  border: solid 0.5em #b21827;
+  border-radius: 6em / 3em;
+  box-sizing: border-box;
+  margin: 1em;
+  max-width: calc(768px - 2em);
+  padding: 1em 1em 2em 1em;
+}
+
+header,
+footer {
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+h1 {
+  left: -9999px;
+  position: absolute;
+}
+
+h2,
+h3 {
+  color: #b21827;
+  font-size: 2em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+input,
+textarea {
+  background-color: #fff;
+  border: solid 2px #2d4283;
+  border-radius: 0.25em;
+  color: #b21827;
+  font: inherit;
+  padding: 0.5em 1em;
+  width: calc(100% - 2em - 4px);
+}
+
+button,
+.button {
+  background-color: #2d4283 !important;
+  border: solid 2px #2d4283;
+  border-radius: 0.25em;
+  color: #fff !important;
+  display: inline-block !important;
+  font: inherit;
+  padding: 0.5em 1em !important;
+  position: relative;
+  text-transform: uppercase;
+  transition: background-color top 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+button:hover,
+.button:hover {
+  background-color: #b21827 !important;
+}
+
+button:active,
+.button:active {
+  top: 2px;
+}
+
+button > span,
+.button > span {
+  margin-left: 0.25em;
+}
+
+a,
+a:link {
+  color: #2d4283;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #b21827;
+}
+
+nav {
+  background-color: #f4ead8;
+  border-bottom: solid 3px #b21827;
+  border-top: solid 3px #2d4283;
+  margin-bottom: 1em;
+}
+
+#logo {
+  height: calc(100vmin - 4em);
+  max-height: 400px;
+  max-width: 400px;
+  width: calc(100vmin - 4em);
+}
+
+#navigation {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  list-style: none;
+  margin: 0.5em;
+  padding: 0;
+}
+
+#navigation > li {
+  margin: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#navigation > li.dog {
+  display: none;
+}
+
+#navigation > li > a {
+  border: solid 2px transparent;
+  display: block;
+  line-height: 1;
+  min-height: 20px;
+  padding: 0.5em;
+}
+
+#navigation .button {
+  max-width: 6em;
+  text-align: center;
+}
+
+#opening-hours p {
+  color: #2d4283;
+  font-size: 1.5em;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#background .read-more-p {
+  text-align: center;
+}
+
+#background #read-more {
+  display: none;
+}
+
+#background .further-reading {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+#background .further-reading p:first-child {
+  margin-top: 0;
+}
+
+#background .further-reading p:last-child {
+  margin-bottom: 0;
+}
+
+#background #read-more:checked ~ .further-reading {
+  max-height: 9999px;
+}
+
+#background #read-more:checked ~ .read-more-p {
+  display: none;
+}
+
+#background strong {
+  color: #b21827;
+  font-family: "Yellowtail", cursive;
+  font-size: 1.5em;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.key {
+  color: #2d4283;
+}
+
+.key > p {
+  text-transform: uppercase;
+}
+
+.key > .codes {
+  column-count: 1;
+  list-style: none;
+  padding: 0;
+}
+
+.hotdogs > p,
+.burgers > p,
+.shakes > p {
+  color: #b21827;
+}
+
+.menu-list {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+.menu {
+  background-color: #fff;
+  border: solid 2px #2d4283;
+  border-radius: 6em / 3em;
+  padding: 1em;
+}
+
+.menu + .menu {
+  margin-top: 2em;
+}
+
+.menu-header {
+  text-align: center;
+}
+
+.menu-header p {
+  margin: 0;
+}
+
+.menu-header p:first-child {
+  font-size: 3em;
+  margin: 1em 0 0 0;
+  text-shadow: 2px 2px #ccc;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-items > li {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.menu-items .name {
+  font-size: 1.5em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.menu-items .description {
+  display: block;
+}
+
+.menu-items .price {
+  color: #b21827;
+  font-family: "Yellowtail", cursive;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.menu-items .option {
+  margin-left: 2em;
+}
+
+.promo {
+  border: solid 2px #b21827;
+  color: #b21827;
+  padding: 0 1em;
+  text-align: center;
+}
+
+.promo + .promo {
+  margin-top: 1em;
+}
+
+.meal-deals > h3 {
+  font-family: "Yellowtail", cursive;
+  font-size: 2.5em;
+  text-transform: lowercase;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.social-media-links > li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.social-media-links > li > a {
+  display: block;
+  font-size: 10vw;
+}
+
+.social-media-links > li > a > span {
+  display: block;
+  font-size: 1rem;
+}
+
+.social-media-links > li:before {
+  content: "";
+  position: static;
+}
+
+footer a img {
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  section {
+    padding: 4em 0 0 0;
+  }
+  section > .content {
+    margin: 0 auto;
+    padding: 1em 2em 2em 2em;
+  }
+  #navigation {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  #navigation > li {
+    flex: 1 1 auto;
+    margin: 0;
+  }
+  #navigation > li.dog {
+    display: block;
+  }
+  #navigation > li > a {
+    padding: 0;
+  }
+  .key > .codes {
+    column-count: 2;
+  }
+  .menu {
+    padding: 1em 2em;
+  }
+}
