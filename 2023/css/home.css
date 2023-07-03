@@ -1,0 +1,56 @@
+header {
+  align-items: center;
+  background-image: url(../img/stickers-tile.webp);
+  background-repeat: repeat;
+  background-size: 1000px 550px;
+  block-size: 90vmin;
+  display: flex;
+  justify-content: center;
+  margin-block-end: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  header {
+    animation: bg-scroll 15s infinite linear;
+  }
+}
+
+#logo {
+  background-color: var(--bg);
+  block-size: 60vmin;
+  border: solid 0.25rem var(--blue);
+  border-radius: 50%;
+  inline-size: 60vmin;
+  padding: 1rem;
+}
+
+@keyframes bg-scroll {
+  100% {
+    background-position: 1000px 550px;
+  }
+}
+
+.nav-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.nav-layout > a {
+  color: var(--blue);
+  font-family: var(--heading-font);
+  font-size: clamp(2rem, 5vmin, 4rem);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-layout > a:hover,
+.nav-layout > a:active {
+  color: var(--red);
+}
+
+h2 {
+  font-size: clamp(2rem, 5vmin, 4rem);
+}
