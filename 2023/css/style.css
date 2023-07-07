@@ -50,7 +50,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: bold;
   margin: 0;
 }
@@ -121,10 +121,10 @@ hr.blue {
   color: var(--blue);
 }
 
-.gold {
+/* .gold {
   -webkit-text-stroke: 0.125rem var(--red);
   color: var(--gold);
-}
+} */
 
 .outline-blue {
   -webkit-text-stroke: 0.125rem var(--blue);
@@ -230,8 +230,8 @@ hr.blue {
 
 .upgrade-grid {
   display: grid;
-  gap: 0.5rem 2rem;
-  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+  grid-template-columns: auto auto;
   margin-inline-end: -3.5rem;
 }
 
@@ -245,8 +245,8 @@ hr.blue {
   background-color: var(--bg);
   border: solid 0.125rem var(--blue);
   display: grid;
-  gap: 0 1rem;
-  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  grid-template-columns: auto auto;
   padding: 0.5rem;
   position: relative;
 }
@@ -258,6 +258,10 @@ hr.blue {
   position: absolute;
   transform: skew(6deg);
   z-index: -1;
+}
+
+.dips-box .name {
+  font-size: 0.85rem;
 }
 
 .add-ons-box {
@@ -280,11 +284,15 @@ hr.blue {
 }
 
 .add-ons-box .item {
-  padding: 0.25rem 4rem 0 0.5rem;
+  padding: 0.25rem 3rem 0 0.5rem;
 }
 
 .add-ons-box .name {
   font-size: 1rem;
+}
+
+.add-ons-box .cost {
+  inset-block-end: 0;
 }
 
 section.info > * + * {
