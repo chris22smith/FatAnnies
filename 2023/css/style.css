@@ -321,10 +321,26 @@ h1 + .text-content {
 /****** photos ******/
 
 .food-photos {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+}
+
+.for-hire {
+  margin: 0 auto;
+  max-inline-size: 832px;
+}
+
+@media (width > 500px) {
+  .for-hire {
+    flex-direction: row;
+    justify-content: stretch;
+  }
+  .for-hire > .photo-item {
+    flex: 0 1 33%;
+  }
 }
 
 @media (width > 800px) {
@@ -342,7 +358,16 @@ h1 + .text-content {
   inline-size: 100%;
 }
 
+.square {
+  aspect-ratio: 1;
+  inline-size: 100%;
+  max-block-size: 256px;
+  max-inline-size: 256px;
+}
+
 /****** header ******/
+
+/* small back arrow on mobile */
 
 header a {
   inset-block-start: 2rem;
@@ -362,6 +387,42 @@ header a:before {
 
 header a:hover:before {
   border-inline-end-color: var(--red);
+}
+
+header a img {
+  display: none;
+}
+
+/* logo on larger sizes */
+
+@media (width > 550px) {
+  header a:before {
+    display: none;
+  }
+
+  header a {
+    background-color: var(--bg);
+    block-size: 108px;
+    border: solid 2px transparent;
+    border-radius: 50%;
+    display: block;
+    inline-size: 108px;
+    inset-block-start: 0.5rem;
+    inset-inline-start: 0.5rem;
+    padding: 0.25rem;
+    position: absolute;
+  }
+
+  header a:hover {
+    border-color: var(--blue);
+  }
+
+  header a img {
+    block-size: 108px;
+    border-radius: 50%;
+    display: inline-block;
+    inline-size: 108px;
+  }
 }
 
 /****** footer ******/
