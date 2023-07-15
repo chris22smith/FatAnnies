@@ -9,6 +9,11 @@ header {
   margin-block-end: 1rem;
 }
 
+h2.smaller {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   header {
     animation: bg-scroll 15s infinite linear;
@@ -20,6 +25,7 @@ header {
   block-size: 60vmin;
   border: solid 0.25rem var(--blue);
   border-radius: 50%;
+  filter: drop-shadow(0 0 1rem);
   inline-size: 60vmin;
   padding: 1rem;
   position: relative;

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>
-      Fat Annie's - Stateside Street Food - Meat free hot dogs, burgers, banging
-      sides in Leeds
-    </title>
+    <title>Fat Annie's - Stateside Street Food - Meat free hot dogs, burgers, banging sides in Leeds</title>
 
     <!-- meta -->
     <meta charset="UTF-8" />
@@ -16,13 +13,11 @@
     />
 
     <!-- preload largest content -->
-    <link rel="preload" href="fat-annies-logo-800.webp" />
+    <link rel="preload" href="img/fat-annies-logo-800.webp" />
+    <link rel="preload" href="img/stickers-tile.webp" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-1979393-15"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1979393-15"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -42,944 +37,170 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- css -->
-    <link rel="stylesheet" href="index.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
     <header id="header">
-      <h1>Fat Annie's Stateside Street Food</h1>
+      <h1 class="visually-hidden">Fat Annie's Stateside Street Food</h1>
       <img
         id="logo"
-        src="fat-annies-logo-800.webp"
-        alt="Fat Annie's Stateside Street Food"
+        src="img/fat-annies-logo_736x736.webp"
+        alt="Fat Annie's Stateside Street Food, Established 2014"
         height="300"
         width="300"
       />
     </header>
-    <nav>
-      <ul id="navigation">
-        <li class="dog">
-          <a href="#header">
-            <img
-              src="dog-small-70x75.webp"
-              alt="Fat Annie's"
-              height="30"
-              width="28"
-              loading="lazy"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#opening-hours">Opening Hours</a>
-        </li>
-        <li>
-          <a href="#background">Background</a>
-        </li>
-        <li>
-          <a href="#menus">Menus</a>
-        </li>
-        <li>
-          <a
-            id="order-button"
-            href="https://www.ubereats.com/leeds/food-delivery/fat-annies/iWYGj1buT_mculeCh7nRlQ"
-            target="_blank"
-            class="button"
-          >
-            <i class="fas fa-credit-card"></i>
-            <span>Order</span>
-          </a>
-        </li>
-        <li>
-          <a href="#buns-for-hire">For Hire</a>
-        </li>
-        <li>
-          <a href="#contact-us">Contact Us</a>
-        </li>
-        <li>
-          <a href="#socials">Socials</a>
-        </li>
-        <li>
-          <a href="tel:07857950954" class="button">
-            <i class="fas fa-mobile-alt"></i>
-            <span>Call</span>
-          </a>
-        </li>
-      </ul>
+    <a class="uber-eats-link" href="https://www.ubereats.com/store/fat-annies/iWYGj1buT_mculeCh7nRlQ" target="_blank" rel="noopener noreferrer">
+      <img src="img/ubereats.svg" height="75" width="75" alt="Uber Eats">
+    </a>
+    <hr class="red" />
+    <h2 class="blue smaller">Kirkgate Market, Leeds<br>
+    Monday - Saturday<br />9.30 till 5</h2>
+    <hr class="red" />
+    <nav class="nav-layout">
+      <a href="main-menu" class="wavy"
+        ><span>M</span><span>A</span><span>I</span><span>N</span><span></span><span>M</span><span>E</span><span>N</span
+        ><span>U</span></a
+      >
+      <a href="breakfast" class="wavy"
+        ><span>B</span><span>R</span><span>E</span><span>A</span><span>K</span><span>F</span><span>A</span><span>S</span
+        ><span>T</span></a
+      >
+      <a href="contact" class="wavy"
+        ><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span></a
+      >
+      <a href="for-hire" class="wavy"
+        ><span>F</span><span>O</span><span>R</span><span></span><span>H</span><span>I</span><span>R</span
+        ><span>E</span></a
+      >
+      <!-- <a href="about" class="wavy"
+        ><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span><span></span><span>U</span
+        ><span>S</span></a
+      > -->
     </nav>
-    <!-- order button script -->
-    <script>
-      const now = new Date();
-      if (now.getHours() >= 17) {
-        const orderButton = document.querySelector("#order-button");
-        orderButton.setAttribute(
-          "href",
-          "https://www.ubereats.com/gb/store/fat-annies/1upHmJUbQWueLGzeMAbPTA"
-        );
-      }
-    </script>
+    <hr class="red" />
     <main>
-      <section id="opening-hours">
-        <div class="content">
-          <h2>Opening hours at Kirkgate Market, Leeds</h2>
-          <p>Monday - Saturday, <span class="nowrap">10 till 5</span></p>
-        </div>
-      </section>
-      <section id="background">
-        <div class="content">
-          <h2>Background</h2>
-          <p>
-            Welcome to Fat Annie's, established in 2014 after an inspiring trip
-            to New York. We started out from a cart on the streets of
-            Manchester's iconic Northern Quarter selling quality hot dogs, as
-            well as feeding festival goers and football fans. In 2017 we got our
-            first permanent home in Leeds Kirkgate Market in the Food Hall. In
-            late 2020 we went totally meat free and expanded our menu to include
-            a range of burgers and banging sides.
-          </p>
-          <h3>Going meat free, November 2020</h3>
-          <p>
-            2020 has been a strange year to say the least what with one thing
-            and another. In amongst all the disruption I've been busy behind the
-            scenes making plans for my business Fat Annie's and implementing
-            some wholesale changes. When we return after lockdown 2.0 Fat
-            Annie's will be back with a new look and most significantly will be
-            going MEAT FREE.
-          </p>
-          <input type="checkbox" id="read-more" />
-          <p class="read-more-p">
-            <label for="read-more" class="button">Read more...</label>
-          </p>
-          <div class="further-reading">
-            <p>
-              It's something I've been considering for a while now after
-              watching Simon Amstell's Carnage in 2018, but as a business it's a
-              huge gamble to make when much of our brand identity, reputation
-              and loyal customer base is built on our juicy pork hot dogs,
-              tender steak sandwiches and maple bacon covered fries. Will it be
-              financial suicide? Who knows, but for personal reasons it is the
-              one that makes sense to me.
-            </p>
-            <p>
-              I personally gave up eating meat altogether last year after
-              initially cutting down my meat consumption over time and trying to
-              buy from higher welfare sources where I can. It had begun to
-              resonate with me that the amount of meat being eaten in the
-              developed world is no longer sustainable for the planet, as shown
-              in the UN climate report of 2019. When KFC had issues with its
-              supply chain, the enormity of consumption began to dawn on me, how
-              many truckloads of chicken were being sent to one restaurant and
-              how many there were all over the country, where could they all
-              come from? Not only that, to produce meat in the quantities needed
-              at the price people are used to paying for it can only be done
-              through intensive factory farming which puts economic motivations
-              over the animal's welfare. The current pandemic again brings into
-              sharp focus issues of cross contamination of animals in the food
-              chain leading to new diseases. One day, not too far in the future,
-              we might all be vegan and look back on this period of time as
-              insane as medieval Royals putting blackbirds in pies. It's the
-              trajectory we are on and have to be, as it is the biggest factor
-              in reducing climate change we can make.
-            </p>
-            <p>
-              I began to fall out of love with Fat Annie's and knew that it no
-              longer represented me as a person, it was no longer authentic or
-              built on passion, which is a crucial aspect of making an
-              independent business work. The more that the business grew at
-              Leeds Kirkgate Market and began to make me a decent living, the
-              more I felt detached from it but the harder it was to make the
-              jump to meat free and take the financial hit. It took me a while
-              to build the courage and the situation of lockdown has given me
-              time to think and an opportunity to stop and redesign the menu
-              from scratch. We'll be meat free throughout the menu but not fully
-              vegan yet, although pretty much every dish on the menu can be
-              converted to vegan as requested, including all the milkshakes.
-            </p>
-            <p>
-              I pay my respects to the pioneering vegans who are leading the
-              way, I'm not there yet on a personal or business level, but have
-              made changes where I can and will continue to do so, as there a
-              lot more I can do. Most of us are at least trying to reduce their
-              meat intake and hopefully we can appeal to all, wherever you are
-              on that spectrum.
-            </p>
-            <p>
-              Who knows if it will work financially, hopefully it will open us
-              up to a whole new audience who show us their support and love.
-              Whatever happens though I'm happy and proud to be moving to meat
-              free and would prefer to be moving in the right direction as a
-              business, being part of the solution not the problem. The world
-              doesn't need another meat hot dog place, there's enough out there,
-              but we can still do with more places offering some tasty meat free
-              lunch choices and that's what we plan to do.
-            </p>
-          </div>
-          <p>As of November 2021 we are now fully plant based.</p>
-        </div>
-      </section>
-      <section id="menus">
-        <div class="content">
-          <h2>Menus</h2>
-          <p class="menu-list">
-            <a href="#breakfast-menu">Breakfast Menu</a>
-            <a href="#main-menu">Main Menu</a>
-          </p>
-          <div id="breakfast-menu" class="menu">
-            <div class="menu-header">
-              <p>BREAKFAST</p>
-              <p>SERVED DAILY UNTIL 11AM</p>
-              <p>100% PLANT BASED</p>
-            </div>
-            <div class="classics">
-              <h3>Classics</h3>
-              <p>Our best sellers and quick breakfasts on the go.</p>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">F.A BREAKFAST CLUB SANDWICH</strong>
-                    <span class="description"
-                      >Sausage patty, tof-egg slice, cheeze and our famous F.A.
-                      Secret Sauce in a toasted brioche style bun</span
-                    >
-                  </span>
-                  <span class="price">4.5</span>
-                </li>
-                <li>
-                  <span class="details option">
-                    <strong class="name">TRY WITH B'CON</strong>
-                  </span>
-                  <span class="price">6.5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">UNCLE WILL'S COWBOY BREAKFAST</strong>
-                    <span class="description"
-                      >P'rk & beans and a cup a Joe (BBQ beans, sausage, b'con
-                      and a coffee). Sets you up for a day on the ranch</span
-                    >
-                  </span>
-                  <span class="price">4.9</span>
-                </li>
-                <li>
-                  <span class="details option">
-                    <strong class="name">TRY WITH A HASH BROWN</strong>
-                  </span>
-                  <span class="price">5.9</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">PORRIDGE (gfo)</strong>
-                    <span class="description"
-                      >Pot of porridge with a choice of blueberries, Grade A
-                      maple syrup or raspberry jam</span
-                    >
-                  </span>
-                  <span class="price">3.5</span>
-                </li>
-              </ul>
-            </div>
-            <div class="drinks">
-              <h3>Drinks</h3>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">BUILDERS TEA / COFFEE</strong>
-                  </span>
-                  <span class="price">1.25</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name"
-                      >FRESH JUICE AVAILABLE AT THE COUNTER</strong
-                    >
-                  </span>
-                  <span class="price">2.5</span>
-                </li>
-              </ul>
-            </div>
-            <div class="stacks">
-              <h3>Stacks</h3>
-              <p>
-                Who has time to make waffles and pancakes? Us. Enjoy an all
-                American institution right here in Yorkshire.
-              </p>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">PANCAKE STACK (gfo)</strong>
-                    <span class="description"
-                      >4 American style fluffy pancakes served with grade A
-                      maple syrup. Choose from:</span
-                    >
-                  </span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="details option">
-                    <strong class="name">Plain</strong>
-                    <span class="description"></span>
-                  </span>
-                  <span class="price">4</span>
-                </li>
-                <li>
-                  <span class="details option">
-                    <strong class="name">Blueberry</strong>
-                    <span class="description"></span>
-                  </span>
-                  <span class="price">4.5</span>
-                </li>
-                <li>
-                  <span class="details option">
-                    <strong class="name">Banana</strong>
-                    <span class="description"></span>
-                  </span>
-                  <span class="price">4.5</span>
-                </li>
-              </ul>
-            </div>
-            <div class="promo">
-              <p>PUMP IT UP!<br />ADD 21g OF PROTEIN TO PANCAKES FOR £2.50</p>
-            </div>
-            <ul class="menu-items">
-              <li>
-                <span class="details">
-                  <strong class="name">WAFFLE STACK</strong>
-                  <span class="description"
-                    >Served the American way. Sugar dusted waffles served with
-                    Grade A maple syrup. Choose from toppings:</span
-                  >
-                </span>
-                <span class="price"></span>
-              </li>
-              <li>
-                <span class="details option">
-                  <strong class="name">Blueberries</strong>
-                  <span class="description"></span>
-                </span>
-                <span class="price">5</span>
-              </li>
-              <li>
-                <span class="details option">
-                  <strong class="name">Fried Chick'n</strong>
-                  <span class="description"></span>
-                </span>
-                <span class="price">8</span>
-              </li>
-            </ul>
-            <div class="promo">
-              <p>ADD B'CON TO ANY STACK FOR £2</p>
-            </div>
-            <div class="go-your-own-way">
-              <h3>GO YOUR OWN WAY</h3>
-              <p>
-                Be the architect of the first meal of your day, whether it's the
-                ultimate breakfast burger or a plate of all the things you love
-                - you design it and we'll build it.
-              </p>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">2 X B'CON (gf)</strong>
-                  </span>
-                  <span class="price">2</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">2 x SAUSAGE</strong>
-                  </span>
-                  <span class="price">1.5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">HASH BROWN</strong>
-                  </span>
-                  <span class="price">1</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">SAUSAGE PATTY</strong>
-                  </span>
-                  <span class="price">2</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">TOF-EGG</strong>
-                  </span>
-                  <span class="price">1</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">BBQ BEANS</strong>
-                  </span>
-                  <span class="price">2.5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">TOASTED BRIOCHE</strong>
-                  </span>
-                  <span class="price">1</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">FRIES (gf)</strong>
-                  </span>
-                  <span class="price">2</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">CHEEZE (gf)</strong>
-                  </span>
-                  <span class="price">0.5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">GRILLED TOMATO</strong>
-                  </span>
-                  <span class="price">0.5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">FRIED CHICK'N</strong>
-                  </span>
-                  <span class="price">2.5</span>
-                </li>
-              </ul>
-            </div>
-            <div class="key">
-              <ul class="codes">
-                <li>GF = Gluten Free</li>
-                <li>GFO = Gluten Free on Request</li>
-              </ul>
-              <p>PLEASE ADVISE THE TEAM OF ANY ALLERGIES</p>
-            </div>
-          </div>
-          <div id="main-menu" class="menu">
-            <div class="menu-header">
-              <p>MAIN MENU</p>
-              <p>ALL ITEMS 100% PLANT BASED</p>
-            </div>
-            <div class="hot-dogs">
-              <h3>HOT DOGS</h3>
-              <p>
-                Our German style franks are made with organic tofu and Beech
-                Wood smoked.
-              </p>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">ANNIE MAC (ve)</strong>
-                    <span class="description"
-                      >Our signature. Smoked tofu frank with house pickle,
-                      cheese, F.A secret sauce & crispy onions</span
-                    >
-                  </span>
-                  <span class="price">6.9</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">TEXAS JACK (ve)</strong>
-                    <span class="description"
-                      >Smoked tofu frank, topped with our Texan jackfruit
-                      chilli, cheese & nacho crunch</span
-                    >
-                  </span>
-                  <span class="price">6.9</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">REDNECK (ve)</strong>
-                    <span class="description"
-                      >It's back! Smoke tofu frank topped with maple b'con,
-                      cheese, chipotle mayo & crispy onions</span
-                    >
-                  </span>
-                  <span class="price">7.9</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">V. FRANK (ve)</strong>
-                    <span class="description"
-                      >Smoked tofu frank, ketchup, mustard & crispy onions</span
-                    >
-                  </span>
-                  <span class="price">4.25</span>
-                </li>
-              </ul>
-              <div class="promo">
-                <p>
-                  FRIES WITH THAT?<br />
-                  ADD FRIES TO YOUR HOT DOG FOR ONLY £1.50
-                </p>
-              </div>
-            </div>
-            <div class="shakes">
-              <h3>SHAKES</h3>
-              <p>
-                All our shakes are made with oat milk and 2 scoops of vanilla
-                ice cream and squirty cream to finish.
-              </p>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">VANILLA (ve) (gfo)</strong>
-                  </span>
-                  <span class="price">3.5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">OREO (ve)</strong>
-                  </span>
-                  <span class="price">4.5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">BISCOFF (ve)</strong>
-                  </span>
-                  <span class="price">4.5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">CHOC CHIP HOBNOB (ve)</strong>
-                  </span>
-                  <span class="price">4.5</span>
-                </li>
-              </ul>
-              <div class="promo">
-                <p>PUMP IT UP!<br />ADD 21g OF PROTEIN TO ANY SHAKE FOR £2</p>
-              </div>
-            </div>
-            <div class="meals">
-              <h3>MEALS</h3>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">KIDS HAPPY DIPPER MEAL</strong>
-                    <span class="description"
-                      >4 nuggets with fries & Fruit Shoot or water</span
-                    >
-                  </span>
-                  <span class="price">4.5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">MINI MEAL</strong>
-                    <span class="description"
-                      >Quick lunch or smaller appetite? Plain burger/hot dog,
-                      small fries & a hot drink, fruit shoot or water</span
-                    >
-                  </span>
-                  <span class="price">5.75</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <span class="description"
-                      >Drinks on meals can be upgraded to a can for 50p</span
-                    >
-                  </span>
-                  <span class="price"></span>
-                </li>
-              </ul>
-              <div class="promo">
-                <p>
-                  NHS / STUDENT?<br />Free fries or can with any hot dog or
-                  burger with a valid photo ID
-                </p>
-              </div>
-            </div>
-            <div class="burgers">
-              <h3>BURGERS</h3>
-              <p>
-                Our beef style patties are packed with 16g of plant protein, B12
-                and are cholesterol free.
-              </p>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">THE SUPREME (ve) (gfo)</strong>
-                    <span class="description"
-                      >Single patty, cheese, FA secret sauce, house pickle,
-                      diced onion & iceberg. Great as a double patty</span
-                    >
-                  </span>
-                  <span class="price">6.9</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name"
-                      >THE ROYALE WITH CHEESE (ve) (gfo)</strong
-                    >
-                    <span class="description"
-                      >Single patty, cheese, ketchup, mustard, house pickle,
-                      tomato & diced onion</span
-                    >
-                  </span>
-                  <span class="price">6.9</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">MEXICANA (ve)</strong>
-                    <span class="description"
-                      >Bean burger with a kick and crunch. With cheese, salsa,
-                      mayo, jalapenos, nacho crunch & iceberg</span
-                    >
-                  </span>
-                  <span class="price">6.9</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">THE JOHNNY CASH (ve)</strong>
-                    <span class="description"
-                      >Fried ch'cken burger, cheese, iceberg and our sweet spicy
-                      Boom Boom Sauce with a pickle speared on top</span
-                    >
-                  </span>
-                  <span class="price">7.9</span>
-                </li>
-              </ul>
-              <div class="promo">
-                <p>
-                  FRIES WITH THAT?<br />ADD FRIES TO YOUR BURGER FOR ONLY £1.50
-                </p>
-              </div>
-              <div class="promo">
-                <p>
-                  ON THE DOUBLE!<br />ADD A 2nd PATTY TO ANY BURGER FOR £2.50
-                </p>
-              </div>
-            </div>
-            <div class="sauces">
-              <h3>SAUCES</h3>
-              <p>Choice of our house sauces 50p each or all 6 for £2.50</p>
-              <ul class="menu-items">
-                <li>
-                  <strong class="name">F.A. SECRET SAUCE (ve) (gf)</strong>
-                </li>
-                <li>
-                  <strong class="name">CHIPOTLE MAYO (ve) (gf)</strong>
-                </li>
-                <li><strong class="name">BBQ BACON KETCHUP (ve)</strong></li>
-                <li><strong class="name">BOOM BOOM SAUCE (ve) (gf)</strong></li>
-                <li><strong class="name">SWEET MUSTARD (ve) (gf)</strong></li>
-                <li>
-                  <strong class="name">JALAPENO MUSTARD (ve) (gf)</strong>
-                </li>
-              </ul>
-            </div>
-            <div class="drinks">
-              <h3>DRINKS</h3>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">ICE COLD CANS / WATER</strong>
-                  </span>
-                  <span class="price">1</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">PREMIUM BOTTLED SODAS</strong>
-                  </span>
-                  <span class="price">2.75</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">BUILDERS TEA/ COFFEE</strong>
-                  </span>
-                  <span class="price">1.25</span>
-                </li>
-              </ul>
-            </div>
-            <div class="fries">
-              <h3>FRIES</h3>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">HOUSE FRIES (ve) (gf)</strong>
-                    <span class="description"
-                      >A tray of our crispy fries with our famous house
-                      seasoning and a choice of sauce</span
-                    >
-                  </span>
-                  <span class="price">2.75</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">CHILLI CHEESE FRIES (ve) (gf)</strong>
-                    <span class="description"
-                      >Fries with jackfruit chilli, cheese & nacho crunch</span
-                    >
-                  </span>
-                  <span class="price">5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">FRIES ROYALE (ve) (gf)</strong>
-                    <span class="description"
-                      >Fries with house pickle, cheese, F.A secret sauce &
-                      crispy onions</span
-                    >
-                  </span>
-                  <span class="price">5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">I'VE GOT FIVE ON IT (ve) (gf)</strong>
-                    <span class="description"
-                      >Fries all the way; b'con, cheese, pickle, jalapenos &
-                      crispy onions. Finished with chipotle mayo</span
-                    >
-                  </span>
-                  <span class="price">6.9</span>
-                </li>
-              </ul>
-            </div>
-            <div class="sides">
-              <h3>SIDES</h3>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">F.A MAC N CHEESE (ve)</strong>
-                    <span class="description"
-                      >Our signature Mac n Cheese topped with F.A Secret Sauce
-                      and crispy onions</span
-                    >
-                  </span>
-                  <span class="price">4</span>
-                </li>
-                <li>
-                  <span class="details option">
-                    <strong class="name">TRY WITH MAPLE B'CON</strong>
-                  </span>
-                  <span class="price">6</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">NUGGETS (ve)</strong>
-                    <span class="description"
-                      >Ch'cken nuggets with a choice of our house dips</span
-                    >
-                  </span>
-                  <span class="price">4</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">SLAW (ve) (gf)</strong>
-                    <span class="description"
-                      >Shredded veg in our sweet and zingy marinade choose
-                      between</span
-                    >
-                  </span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="details option">
-                    <strong class="name">Pickle slaw</strong>
-                  </span>
-                  <span class="price">2.5</span>
-                </li>
-                <li>
-                  <span class="details option">
-                    <strong class="name">Creamy slaw</strong>
-                  </span>
-                  <span class="price">3</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">COWBOY BEANS (ve)</strong>
-                    <span class="description"
-                      >Uncle Will's smoky BBQ beans</span
-                    >
-                  </span>
-                  <span class="price">2.5</span>
-                </li>
-                <li>
-                  <span class="details">
-                    <strong class="name">PICKLE (ve) (gf)</strong>
-                    <span class="description">Dill pickle</span>
-                  </span>
-                  <span class="price">1</span>
-                </li>
-              </ul>
-            </div>
-            <div class="sweet-fa">
-              <h3>SWEET F.A.</h3>
-              <ul class="menu-items">
-                <li>
-                  <span class="details">
-                    <strong class="name">WAFFLE STACK (ve) (From 3pm)</strong>
-                    <span class="description"
-                      >American style waffles served with Grade A maple syrup.
-                      Choose from toppings:</span
-                    >
-                  </span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="details option">
-                    <strong class="name">Blueberries</strong>
-                  </span>
-                  <span class="price">5</span>
-                </li>
-                <li>
-                  <span class="details option">
-                    <strong class="name">Fried Chick'n</strong>
-                  </span>
-                  <span class="price">8</span>
-                </li>
-              </ul>
-              <div class="promo">
-                <p>ADD CREAM OR ICE CREAM £1</p>
-              </div>
-            </div>
-            <div class="key">
-              <ul class="codes">
-                <li>VE = Vegan</li>
-                <li>GF = Gluten Free</li>
-                <li>GFO = Gluten Free on Request</li>
-              </ul>
-              <p>PLEASE ADVISE THE TEAM OF ANY ALLERGIES</p>
-            </div>
-          </div>
-          <p class="menu-list">
-            <a href="#breakfast-menu">Breakfast Menu</a>
-            <a href="#main-menu">Main Menu</a>
-          </p>
-        </div>
-      </section>
-      <section id="buns-for-hire">
-        <div class="content">
-          <h2>Buns for Hire!</h2>
-          <p>
-            If you'd like to see our original custom built hot dog cart at your
-            event, get in touch!
-          </p>
-          <p>
-            We can provide details of our packages or we can do something more
-            bespoke to your needs.
-          </p>
-          <p>
-            Please provide details of where it will be approximate numbers and
-            the proposed date in your message.
-          </p>
-        </div>
-      </section>
-      <section id="contact-us">
-        <div class="content">
-          <h2>Contact us</h2>
-          <form
-            action="https://formspree.io/f/xoqpnpwq"
-            method="POST"
-            enctype="multipart/form-data"
-          >
-            <input type="hidden" name="_subject" value="New enquiry" />
-            <input type="hidden" name="_honeypot" value="" />
-            <p>
-              <label for="fullname">Full name</label><br />
-              <input
-                type="text"
-                id="fullname"
-                name="fullname"
-                autocomplete="name"
-              />
-            </p>
-            <p>
-              <label for="email">Email</label><br />
-              <input
-                type="email"
-                id="email"
-                name="_replyto"
-                autocomplete="email"
-              />
-            </p>
-            <p>
-              <label for="enquiry">Enquiry</label><br />
-              <textarea
-                id="enquiry"
-                name="enquiry"
-                autocomplete="enquiry"
-                rows="5"
-              ></textarea>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
-        </div>
-      </section>
-      <section id="socials">
-        <div class="content">
-          <h2>Socials</h2>
-          <ul class="social-media-links">
-            <li>
-              <a
-                href="https://twitter.com/fatannies"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i class="fab fa-twitter"></i>
-                <span>Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://instagram.com/fat_annies"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i class="fab fa-instagram"></i>
-                <span>Insta</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/fatannies.co.uk/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i class="fab fa-facebook"></i>
-                <span>Facebook</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>
-        <a
-          href="https://ratings.food.gov.uk/business/1080065"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      <div class="food-photos">
+        <div class="photo-item">
           <img
-            src="fhrs_5_en-gb.webp"
-            alt="Food Hygiene Rating 5"
-            width="290"
-            height="148"
-            loading="lazy"
+            class="full-width"
+            srcset="img/hotdogs_512x288.jpg 512w, img/hotdogs_512x288.webp 512w, img/hotdogs_1024x576.webp 1024w"
+            alt="A selection of hot dogs with fries and dips."
           />
-        </a>
-      </p>
-      <p>
-        Copyright © 2014-
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        <noscript>present</noscript> Fat Annie's. All Rights Reserved.
-      </p>
-      <!-- web development by Chris Smith @chris22smith -->
+        </div>
+        <div class="photo-item">
+          <img
+            class="full-width"
+            srcset="img/picnic_512x288.jpg 512w, img/picnic_512x288.webp 512w, img/picnic_1024x576.webp 1024w"
+            alt="A full selection with trays laid out on a tartan picnic blanket, including burgers, hotdogs, fries, sides and drinks. An arm is reaching in dipping one of the fries into a mustard dip."
+          />
+        </div>
+        <div class="photo-item">
+          <img
+            class="full-width"
+            srcset="
+              img/double-supreme_512x288.jpg    512w,
+              img/double-supreme_512x288.webp   512w,
+              img/double-supreme_1024x576.webp 1024w
+            "
+            alt="The Double Supreme Meal, a burger with fries and a series of dips."
+          />
+        </div>
+      </div>
+      <hr class="red" />
+      <div class="text-content">
+        <h2 class="blue"
+          ><span>F</span><span>A</span><span>T</span><span></span><span>A</span><span>N</span><span>N</span
+          ><span>I</span><span>E</span>'<span>S</span></h2
+        >
+        <p
+          >Welcome to Fat Annie's, established in 2014 after an inspiring trip to New York. We started out from a cart
+          on the streets of Manchester's iconic Northern Quarter selling quality hot dogs, as well as feeding festival
+          goers and football fans.</p
+        ><p>In 2017 we got our first permanent home in Leeds Kirkgate Market in the Food Hall.</p
+        ><p
+          >In late 2020 we went totally meat free and expanded our menu to include a range of burgers and banging
+          sides.</p
+        >
+      </div>
+      <hr class="red" />
+    </main>
+
+    <footer>
+      <div class="footer-layout">
+        <div class="footer-item">
+          <nav class="footer-links">
+            <a href="main-menu">Main Menu</a>
+            <a href="breakfast">Breakfast</a>
+            <a href="contact">Contact</a>
+            <a href="for-hire">For Hire</a>
+            <!-- <a href="about">About Us</a> -->
+          </nav>
+        </div>
+        <div class="footer-item">
+          <div class="footer-links">
+            <a href="https://twitter.com/fatannies" rel="noopener noreferrer" target="_blank">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+            <a href="https://instagram.com/fat_annies" rel="noopener noreferrer" target="_blank">
+              <i class="fab fa-instagram"></i>
+              <span>Insta</span>
+            </a>
+            <a href="https://www.facebook.com/fatannies.co.uk/" rel="noopener noreferrer" target="_blank">
+              <i class="fab fa-facebook"></i>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-links">
+            <a
+              href="https://www.ubereats.com/store/fat-annies/iWYGj1buT_mculeCh7nRlQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-credit-card"></i>
+              <span>Order via Uber Eats</span>
+            </a>
+            <a href="tel:07857950954">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Call</span>
+            </a>
+          </div>
+          </div>
+          <div class="footer-item">
+            <a
+              href="https://ratings.food.gov.uk/business/1080065"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="image-link"
+              ><img
+                class="fhrs"
+                src="img/fhrs_5_en-gb.webp"
+                alt="Food Hygiene Rating 5"
+                width="145"
+                height="74"
+                loading="lazy"
+            /></a>
+          </div>
+          <div class="footer-item">
+            <div class="copyright"
+              >Copyright © 2014-
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              <noscript>present</noscript> Fat Annie's.<br />All Rights Reserved.</div
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- web development by Chris Smith https://chrissmith.xyz, @chris22smith -->
     </footer>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="preload"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Yellowtail&display=swap"
-    />
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Yellowtail&display=swap"
-    /></noscript>
+    <!-- <script src="js/effects.js"></script> -->
 
     <!-- icons -->
     <script
