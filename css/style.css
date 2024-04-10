@@ -5,12 +5,14 @@
 
 @font-face {
   font-family: "TheCountryBlues-Regular";
-  src: url("../fonts/country-blues/TheCountryBlues-Regular.woff2") format("opentype");
+  src: url("../fonts/country-blues/TheCountryBlues-Regular.woff2")
+    format("opentype");
 }
 
 @font-face {
   font-family: "TheCountryBlues-Black";
-  src: url("../fonts/country-blues/TheCountryBlues-Black.woff2") format("opentype");
+  src: url("../fonts/country-blues/TheCountryBlues-Black.woff2")
+    format("opentype");
 }
 
 :root {
@@ -21,6 +23,12 @@
   --red: #b21827;
   --square: 1rem;
   --gold: #f8b231;
+
+  --size-m: 1rem;
+  --size-ml: 1.5rem;
+  --size-l: 2rem;
+  --size-xl: 3rem;
+  --size-xxl: 4rem;
 }
 
 html {
@@ -29,6 +37,7 @@ html {
 }
 
 body {
+  color: var(--blue);
   font-family: var(--body-font);
   /* font-size: clamp(1rem, 1rem + 0.5vw, 2rem); */
   line-height: 1.2;
@@ -99,7 +108,14 @@ hr {
       var(--accent) 75%,
       var(--accent)
     ),
-    linear-gradient(45deg, var(--accent) 25%, transparent 25%, transparent 75%, var(--accent) 75%, var(--accent));
+    linear-gradient(
+      45deg,
+      var(--accent) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--accent) 75%,
+      var(--accent)
+    );
   block-size: calc(2 * var(--square));
   border: none;
   margin: 0;
@@ -166,6 +182,23 @@ hr.blue {
 
 /****** menus ******/
 
+.menu {
+  margin: 0 auto;
+  max-inline-size: 44rem;
+}
+
+.menu > section {
+  margin: 2rem 0;
+}
+
+.menu > section > h2 {
+  font-size: var(--size-xl);
+}
+
+.menu > section > h3 {
+  font-size: var(--size-l);
+}
+
 .item {
   border: solid 0.125rem transparent;
   padding: 0.75rem 4rem 0.5rem 0.5rem;
@@ -183,9 +216,11 @@ hr.blue {
 
 .item > .name {
   font-family: var(--heading-font);
-  font-size: 1.25em;
-  /* font-weight: bold; */
-  text-transform: uppercase;
+  font-size: Var(--size-l);
+}
+
+.item > .name > span {
+  font-size: var(--size-m);
 }
 
 .item > .cost {
@@ -316,6 +351,23 @@ section.info > * + * {
 
 h1 + .text-content {
   margin-block-start: -2rem;
+}
+
+.alt-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-block-start: 2rem;
+}
+
+.alt-list > * {
+  font-size: var(--size-ml);
+  font-weight: bold;
+}
+
+.alt-list > * > span {
+  font-size: var(--size-m);
 }
 
 /****** photos ******/
